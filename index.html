@@ -7,19 +7,19 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
+<!--Font styles-->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!--Css style sheet-->
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
 
   <main class="container">
     <div class="maincontainer-wrapper">
       
-      <!-- Profile information-->
+      <!-- Section 1 Profile information-->
       <section class="profile">
         <div class="profile-container">
           
@@ -36,114 +36,91 @@
           <h3 class="weekly">Weekly</h3>
           <h3 class="monthly">Monthly</h3> 
         </div>
-        <!--Different sections including stats-->
-      </section class="all-info">
-        <div class="info-container">
+      </section>
+
+        <!--Section 2 Stat info-->
+      <section class="all-info">
+        <div class="all-info-container">
           
           <!--Work information-->
-          <div id="work" class="individual-info">
-            <h3 class="title">Work</h3>
-            <h2 class="daily-time hide">5hrs</h2>
-            <h2 class="weekly-time">32hrs</h2>
-            <h2 class="monthly-time hide">103hrs</h2>
-            <h4 class="previous-day hide">Previous Day-7hrs</h4>
-            <h4 class="previous-week">Previous Week-36hrs</h4>
-            <h4 class="previous-month hide">Previous Month-128hrs</h4>
+          <div id= "work-container" class="individual-info-container">
+            <div id="work" class="individual-info">
+              <h3 class="title">Work</h3>
+              <h2 class="daily-time hide">5hrs</h2>
+              <h2 class="weekly-time">32hrs</h2>
+              <h2 class="monthly-time hide">103hrs</h2>
+              <h4 class="previous-day hide">Previous Day-7hrs</h4>
+              <h4 class="previous-week">Previous Week-36hrs</h4>
+              <h4 class="previous-month hide">Previous Month-128hrs</h4>
+            </div>
           </div>
 
           <!--Play information-->
-          <div id="play" class="individual-info">
-            <h3 class="title">Play</h3>
-            <h2 class="daily-time hide">1hr</h2>
-            <h2 class="weekly-time">10hrs</h2>
-            <h2 class="monthly-time hide">23hrs</h2>
-            <h4 class="previous-day hide">Previous Day-2hrs</h4>
-            <h4 class="previous-week">Previous Week-8hrs</h4>
-            <h4 class="previous-month hide">Previous Month-29hrs</h4>
+          <div id="play-container" class="individual-info-container">
+            <div id="play" class="individual-info">
+              <h3 class="title">Play</h3>
+              <h2 class="daily-time hide">1hr</h2>
+              <h2 class="weekly-time">10hrs</h2>
+              <h2 class="monthly-time hide">23hrs</h2>
+              <h4 class="previous-day hide">Previous Day-2hrs</h4>
+              <h4 class="previous-week">Previous Week-8hrs</h4>
+              <h4 class="previous-month hide">Previous Month-29hrs</h4>
+            </div>
           </div>
 
           <!--Study information-->
-          <div id="study" class="individual-info">
-            <h3 class="title">Study</h3>
-            <h2 class="daily-time hide">5hrs</h2>
-            <h2 class="weekly-time">32hrs</h2>
-            <h2 class="monthly-time hide">103hrs</h2>
-            <h4 class="previous-day hide">Previous Day-7hrs</h4>
-            <h4 class="previous-week">Previous Week-36hrs</h4>
-            <h4 class="previous-month hide">Previous Month-128hrs</h4>
+          <div id="study-container" class="individual-info-container">
+            <div id="study" class="individual-info">
+              <h3 class="title">Study</h3>
+              <h2 class="daily-time hide">0hrs</h2>
+              <h2 class="weekly-time">4hrs</h2>
+              <h2 class="monthly-time hide">13hrs</h2>
+              <h4 class="previous-day hide">Previous Day-1hr</h4>
+              <h4 class="previous-week">Previous Week-7hrs</h4>
+              <h4 class="previous-month hide">Previous Month-19hrs</h4>
+            </div>
           </div>
-
-          Study
-          0hrs <!-- daily -->
-          Previous - 1hr <!-- daily -->
-          4hrs <!-- weekly -->
-          Previous - 7hrs <!-- weekly -->
-          13hrs <!-- monthly -->
-          Previous - 19hrs <!-- monthly -->
 
            <!--Exercise information-->
-           <div id="exercise" class="individual-info">
-            <h3 class="title">Exercise</h3>
-            <h2 class="daily-time hide">5hrs</h2>
-            <h2 class="weekly-time">32hrs</h2>
-            <h2 class="monthly-time hide">103hrs</h2>
-            <h4 class="previous-day hide">Previous Day-7hrs</h4>
-            <h4 class="previous-week">Previous Week-36hrs</h4>
-            <h4 class="previous-month hide">Previous Month-128hrs</h4>
+          <div id="exercise-container" class="individual-info-container">
+            <div id="exercise" class="individual-info">
+              <h3 class="title">Exercise</h3>
+              <h2 class="daily-time hide">1hr</h2>
+              <h2 class="weekly-time">5hrs</h2>
+              <h2 class="monthly-time hide">11hrs</h2>
+              <h4 class="previous-day hide">Previous Day-1hr</h4>
+              <h4 class="previous-week">Previous Week-5hrs</h4>
+              <h4 class="previous-month hide">Previous Month-18hrs</h4>
+            </div>
           </div>
-
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
 
           <!--Social information-->
-          <div id="social" class="individual-info">
-            <h3 class="title">Social</h3>
-            <h2 class="daily-time hide">5hrs</h2>
-            <h2 class="weekly-time">32hrs</h2>
-            <h2 class="monthly-time hide">103hrs</h2>
-            <h4 class="previous-day hide">Previous Day-7hrs</h4>
-            <h4 class="previous-week">Previous Week-36hrs</h4>
-            <h4 class="previous-month hide">Previous Month-128hrs</h4>
+          <div id="social-container" class="individual-info-container">
+            <div id="social" class="individual-info">
+              <h3 class="title">Social</h3>
+              <h2 class="daily-time hide">1hr</h2>
+              <h2 class="weekly-time">5hrs</h2>
+              <h2 class="monthly-time hide">21hrs</h2>
+              <h4 class="previous-day hide">Previous Day-3hrs</h4>
+              <h4 class="previous-week">Previous Week-10hrs</h4>
+              <h4 class="previous-month hide">Previous Month-23hrs</h4>
+            </div>
           </div>
-
-          Social
-          1hr <!-- daily -->
-          Previous - 3hrs <!-- daily -->
-          5hrs <!-- weekly -->
-          Previous - 10hrs <!-- weekly -->
-          21hrs <!-- monthly -->
-          Previous - 23hrs <!-- monthly -->
 
            <!--Selfcare information-->
-           <div id="selfcare" class="individual-info">
-            <h3 class="title">Self Care</h3>
-            <h2 class="daily-time hide">5hrs</h2>
-            <h2 class="weekly-time">32hrs</h2>
-            <h2 class="monthly-time hide">103hrs</h2>
-            <h4 class="previous-day hide">Previous Day-7hrs</h4>
-            <h4 class="previous-week">Previous Week-36hrs</h4>
-            <h4 class="previous-month hide">Previous Month-128hrs</h4>
+          <div id="selfcare-container" class="individual-info-container">
+            <div id="selfcare" class="individual-info">
+              <h3 class="title">Self Care</h3>
+              <h2 class="daily-time hide">0hrs</h2>
+              <h2 class="weekly-time">2hrs</h2>
+              <h2 class="monthly-time hide">7hrs</h2>
+              <h4 class="previous-day hide">Previous Day-1hr</h4>
+              <h4 class="previous-week">Previous Week-2hrs</h4>
+              <h4 class="previous-month hide">Previous Month-11hrs</h4>
+            </div>
           </div>
 
-          Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-
-
         </div>
-      <section>
-
 
       </section>
 
