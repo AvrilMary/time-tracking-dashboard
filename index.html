@@ -25,16 +25,18 @@
           
           <!--Personal info-->
           <div class="profile-info">
-            <figure>
-              <img src= "images/image-jeremy.png" alt="Profile photo">
-            </figure>
-            <h4>Report for</h4>
-            <h2>Jeremy Robson</h2>
+              <img class="profile-picture" src= "images/image-jeremy.png" alt="Profile photo">
+            <div class="profile-details">
+              <h4>Report for</h4>
+              <h2>Jeremy Robson</h2>
+            </div>
           </div>
           <!--Daily/Weekly/Monthly section-->
-          <h3 class="daily"> Daily</h3>
-          <h3 class="weekly">Weekly</h3>
-          <h3 class="monthly">Monthly</h3> 
+          <div class="time">
+            <h3 class="daily"> Daily</h3>
+            <h3 class="weekly">Weekly</h3>
+            <h3 class="monthly">Monthly</h3> 
+          </div>
         </div>
       </section>
 
@@ -44,83 +46,159 @@
           
           <!--Work information-->
           <div id= "work-container" class="individual-info-container">
+            <img class="image" src= "images/icon-work.svg" alt="Work image">
             <div id="work" class="individual-info">
               <h3 class="title">Work</h3>
-              <h2 class="daily-time hide">5hrs</h2>
-              <h2 class="weekly-time">32hrs</h2>
-              <h2 class="monthly-time hide">103hrs</h2>
-              <h4 class="previous-day hide">Previous Day-7hrs</h4>
-              <h4 class="previous-week">Previous Week-36hrs</h4>
-              <h4 class="previous-month hide">Previous Month-128hrs</h4>
-            </div>
-          </div>
+
+              <div class="stats">
+
+                <div class="current">
+                  <h2 class="daily-time hide">5hrs</h2>
+                  <h2 class="weekly-time">32hrs</h2>
+                  <h2 class="monthly-time hide">103hrs</h2>
+                </div>
+
+                <div class="previous">
+                  <h4 class="previous-day hide">Previous Day-7hrs</h4>
+                  <h4 class="previous-week">Previous Week-36hrs</h4>
+                  <h4 class="previous-month hide">Previous Month-128hrs</h4>
+                </div>
+
+              </div> <!--End of stats div-->
+
+            </div> <!-- End of work ID div-->
+
+          </div> <!-- End of work container ID div-->
 
           <!--Play information-->
-          <div id="play-container" class="individual-info-container">
-            <div id="play" class="individual-info">
+        <div id="play-container" class="individual-info-container">
+            <img class="image" src= "images/icon-play.svg" alt="Play image">
+          <div id="play" class="individual-info">
               <h3 class="title">Play</h3>
-              <h2 class="daily-time hide">1hr</h2>
-              <h2 class="weekly-time">10hrs</h2>
-              <h2 class="monthly-time hide">23hrs</h2>
-              <h4 class="previous-day hide">Previous Day-2hrs</h4>
-              <h4 class="previous-week">Previous Week-8hrs</h4>
-              <h4 class="previous-month hide">Previous Month-29hrs</h4>
-            </div>
-          </div>
+            
+            <div class="stats">
+               
+              <div class="current">
+                  <h2 class="daily-time hide">1hr</h2>
+                  <h2 class="weekly-time">10hrs</h2>
+                  <h2 class="monthly-time hide">23hrs</h2>
+              </div>
+
+              <div class="previous">
+                  <h4 class="previous-day hide">Previous Day-2hrs</h4>
+                  <h4 class="previous-week">Previous Week-8hrs</h4>
+                  <h4 class="previous-month hide">Previous Month-29hrs</h4>
+              </div>
+
+            </div> <!--End of stats div-->
+
+          </div> <!-- End of play ID div-->
+
+        </div> <!-- End of play container ID div-->
 
           <!--Study information-->
-          <div id="study-container" class="individual-info-container">
-            <div id="study" class="individual-info">
+        <div id="study-container" class="individual-info-container">
+            <img class="image" src= "images/icon-study.svg" alt="Study image">
+          <div id="study" class="individual-info">
               <h3 class="title">Study</h3>
-              <h2 class="daily-time hide">0hrs</h2>
-              <h2 class="weekly-time">4hrs</h2>
-              <h2 class="monthly-time hide">13hrs</h2>
-              <h4 class="previous-day hide">Previous Day-1hr</h4>
-              <h4 class="previous-week">Previous Week-7hrs</h4>
-              <h4 class="previous-month hide">Previous Month-19hrs</h4>
-            </div>
-          </div>
+            
+            <div class="stats">
+              
+              <div class="current">
+                <h2 class="daily-time hide">0hrs</h2>
+                <h2 class="weekly-time">4hrs</h2>
+                <h2 class="monthly-time hide">13hrs</h2>
+              </div>
+
+              <div class="previous">
+                <h4 class="previous-day hide">Previous Day-1hr</h4>
+                <h4 class="previous-week">Previous Week-7hrs</h4>
+                <h4 class="previous-month hide">Previous Month-19hrs</h4>
+              </div>
+
+            </div> <!--End of stats div-->
+
+          </div> <!-- End of study ID div-->
+
+        </div> <!-- End of study container ID div-->
 
            <!--Exercise information-->
-          <div id="exercise-container" class="individual-info-container">
-            <div id="exercise" class="individual-info">
+        <div id="exercise-container" class="individual-info-container">
+            <img class="image" src= "images/icon-exercise.svg" alt="Exercise image">
+          <div id="exercise" class="individual-info">
               <h3 class="title">Exercise</h3>
-              <h2 class="daily-time hide">1hr</h2>
-              <h2 class="weekly-time">5hrs</h2>
-              <h2 class="monthly-time hide">11hrs</h2>
-              <h4 class="previous-day hide">Previous Day-1hr</h4>
-              <h4 class="previous-week">Previous Week-5hrs</h4>
-              <h4 class="previous-month hide">Previous Month-18hrs</h4>
-            </div>
-          </div>
+
+            <div class="stats">
+
+              <div class="current">
+                <h2 class="daily-time hide">1hr</h2>
+                <h2 class="weekly-time">5hrs</h2>
+                <h2 class="monthly-time hide">11hrs</h2>
+              </div>
+
+              <div class="previous">
+                <h4 class="previous-day hide">Previous Day-1hr</h4>
+                <h4 class="previous-week">Previous Week-5hrs</h4>
+                <h4 class="previous-month hide">Previous Month-18hrs</h4>
+              </div>
+          
+            </div> <!--End of stats div-->
+
+          </div> <!-- End of exercise ID div-->
+
+        </div> <!-- End of exercise container ID div-->
 
           <!--Social information-->
-          <div id="social-container" class="individual-info-container">
-            <div id="social" class="individual-info">
+        <div id="social-container" class="individual-info-container">
+            <img class="image" src= "images/icon-social.svg" alt="Social image">
+          <div id="social" class="individual-info">
               <h3 class="title">Social</h3>
-              <h2 class="daily-time hide">1hr</h2>
-              <h2 class="weekly-time">5hrs</h2>
-              <h2 class="monthly-time hide">21hrs</h2>
-              <h4 class="previous-day hide">Previous Day-3hrs</h4>
-              <h4 class="previous-week">Previous Week-10hrs</h4>
-              <h4 class="previous-month hide">Previous Month-23hrs</h4>
-            </div>
-          </div>
+            
+            <div class="stats">
 
+              <div class="current">
+                <h2 class="daily-time hide">1hr</h2>
+                <h2 class="weekly-time">5hrs</h2>
+                <h2 class="monthly-time hide">21hrs</h2>
+              </div>
+              
+              <div class="previous">
+                <h4 class="previous-day hide">Previous Day-3hrs</h4>
+                <h4 class="previous-week">Previous Week-10hrs</h4>
+                <h4 class="previous-month hide">Previous Month-23hrs</h4>
+              </div>
+            </div> <!--End of stats div-->
+
+          </div> <!-- End of social ID div-->
+
+        </div> <!-- End of social container ID div-->
+
+        
            <!--Selfcare information-->
-          <div id="selfcare-container" class="individual-info-container">
-            <div id="selfcare" class="individual-info">
+        <div id="selfcare-container" class="individual-info-container">
+            <img class="image" src= "images/icon-self-care.svg" alt="Selfcare image">
+          <div id="selfcare" class="individual-info">
               <h3 class="title">Self Care</h3>
-              <h2 class="daily-time hide">0hrs</h2>
-              <h2 class="weekly-time">2hrs</h2>
-              <h2 class="monthly-time hide">7hrs</h2>
-              <h4 class="previous-day hide">Previous Day-1hr</h4>
-              <h4 class="previous-week">Previous Week-2hrs</h4>
-              <h4 class="previous-month hide">Previous Month-11hrs</h4>
-            </div>
-          </div>
+            
+            <div class="stats">
+            
+              <div class="current">
+                <h2 class="daily-time hide">0hrs</h2>
+                <h2 class="weekly-time">2hrs</h2>
+                <h2 class="monthly-time hide">7hrs</h2>
+              </div>
+              
+              <div class="previous">
+                <h4 class="previous-day hide">Previous Day-1hr</h4>
+                <h4 class="previous-week">Previous Week-2hrs</h4>
+                <h4 class="previous-month hide">Previous Month-11hrs</h4>
+              </div>
 
-        </div>
+            </div> <!--End of stats div-->
+
+          </div> <!-- End of selfcare ID div-->
+
+        </div> <!-- End of selfcare container ID div-->
 
       </section>
 
