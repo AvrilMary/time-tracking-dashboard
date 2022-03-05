@@ -12,7 +12,7 @@ body {
     font-size: 18px;
     color: #e2e3ed;
     background-color: hsl(226, 43%, 10%); /* Very dark blue */
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -30,7 +30,7 @@ h3 {
 h4 {
     margin: 0;
     font-weight: 300;
-    font-size: 0.9em;
+    font-size: 0.75em;
 }
 
 .container {
@@ -112,8 +112,8 @@ h4 {
     .stats {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         padding-top: 10px;
+        align-items: center;
         padding-bottom: 10px;
     }
 
@@ -164,41 +164,97 @@ h4 {
     @media (min-width: 700px) {
     
     
+    /* General contents */
     .container {
-        display: flex;
-        justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    width: 90%;
     }
+
     
     .maincontainer-wrapper {
-    /*width: 100%; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     }
 
-    .profile-container {
-    height: 100%;
-    }
 
     .all-info-container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
     }
 
-    .individual-info-container {
-    width: 33%;
-    margin: 0;
-    }
 
+    /*-------Section 1 Profile Information-----*/
+
+    .profile-container {
+        height: 100%;
+        margin-right: 10px;
+    }
+    
     .profile-info {
     margin: 0;
-    height: 70%;
-   /* padding-bottom: 120px; */
+    flex-wrap: wrap;
     }
 
-    .time {
-    height: 33%;
+    .profile-details {
+    padding: 0;
+    padding-bottom: 15px;
     }
+
+    .profile-picture {
+        padding-bottom: 20px;
+        width: 50%;
+     }
+    
+/*-------Section 2 Stat Information-----*/
+
+    .individual-info-container {
+        width: 30%;
+        margin: 0;
+    }
+    
+    #work-container, #play-container, #study-container {
+        margin-bottom: 25px;
+    }
+    
+    
+    .individual-info {
+        padding-top: 20px;
+    }
+
+
+    .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+
+    .time {
+    flex-flow: column;
+    padding-left: 20px;
+    margin-top: 20px;
+    }
+
+    .time h3 {
+    margin-bottom: 10px;
+    }
+
+    .current h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    }
+
+
+/* Responsive fonts */
+
+   h3 {
+    font-size: 1em;
+   }
   
 }
 
