@@ -117,6 +117,9 @@ h4 {
 
     .image {
         max-height: 40px;
+        text-align: right;
+        margin-left: 75%;
+    
     }
 
     .stats {

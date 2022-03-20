@@ -7,19 +7,13 @@ console.log(weekly);
 const monthly = document.querySelector(".monthly");
 
 
-const jsonData = require(`./data.json`);
-console.log(jsonData);
+const getData = async function () {
+    const res = await fetch (`./data.json`);
+    const data = await res.json();
+    console.log(data);
+}
 
-
-/*
-const currentDayWork = document.querySelector("#work .daily-time");
-console.log(currentDayWork);
-const currentWeekWork = document.querySelector("#work .weekly-time");
-const currentMonthWork = document.querySelector("#work .monthly-time");
-
-weekly.addEventListener("click", function () {
-    currentWeekWork.style.color = "purple";
-}); 
+getData();
 
 
 
