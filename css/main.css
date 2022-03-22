@@ -70,10 +70,14 @@ h4 {
     padding-top: 5px;
 }
 
+
 .profile-picture {
     width: 25%;
     height: 25%;
+    border-image-width: 5px;
+    border: white;
 }
+
 
 .time {
     display: flex;
@@ -137,6 +141,11 @@ h4 {
 
     .previous h4 {
         color: hsl(235, 45%, 61%);
+    }
+
+    .previous h4:hover {
+        font-weight: 300;
+        color: #fff;
     }
 
 
