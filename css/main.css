@@ -12,12 +12,12 @@ body {
     font-size: 18px;
     color: #e2e3ed;
     background-color: hsl(226, 43%, 10%); /* Very dark blue */
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0;
     font-weight: 300;
 }
@@ -53,8 +53,8 @@ h4 {
 
 .profile-info {
     background-color: hsl(246, 80%, 60%);
-    padding: 25px;
-    margin-top: 25px;
+    padding: 10% 5% 10% 10%;
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -63,7 +63,7 @@ h4 {
 }
 
 .profile-details {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .profile-details h2 {
@@ -72,10 +72,22 @@ h4 {
 
 
 .profile-picture {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+
+figure {
     width: 25%;
     height: 25%;
-    border-image-width: 5px;
-    border: white;
+    padding: 3px;
+    margin: 0;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -226,11 +238,13 @@ h4 {
     .profile-container {
     height: 100%;
     margin-right: 10px;
+    width: 100%;
     }
     
     .profile-info {
     margin: 0;
     flex-wrap: wrap;
+    height: 60%;
     }
 
     .profile-details {
@@ -238,11 +252,16 @@ h4 {
     padding-bottom: 25%;
     }
 
-    .profile-picture {
-    padding-top: 10px;
-    padding-bottom: 25px;
-    width: 100px;
-     }
+    .profile-details h2 {
+        font-size: 1.3em;
+        max-width: 60%;
+    }
+
+    figure {
+        width: 50%;
+        height: 50%;
+        margin-bottom: 10%;
+    }
 
      .time {
     flex-flow: column;
