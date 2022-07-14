@@ -22,7 +22,18 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <!--Css style sheet-->
   <link rel="stylesheet" href="css/main.css" />
-  <script src="js/script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $.getJSON("data.json", function(data){
+            console.log(data.daily); 
+            console.log(data.weekly); 
+        }).fail(function(){
+            console.log("An error has occurred.");
+        });
+    });
+    </script> 
+ <!--<script src="js/main.js" defer></script>--> 
 </head>
 <body>
 
