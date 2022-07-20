@@ -1,14 +1,4 @@
 
-
-/*
-
-const jsonData= require('./data.json'); 
-console.log(jsonData);
-
-*/
-
-
-
 // Replace ./data.json with your JSON feed
 fetch('./data.json').then(response => {
     return response.json();
@@ -20,23 +10,17 @@ fetch('./data.json').then(response => {
   });
 
 
-
 // Global variables
 
 const daily = document.querySelector(".daily");
+console.log(daily);
 const weekly = document.querySelector(".weekly");
 console.log(weekly);
 const monthly = document.querySelector(".monthly");
+console.log(monthly);
+
+daily.addEventListener("click", function () {
+
+})
 
 
-/*
-const getData = async function () {
-    const res = await fetch ("data.json");
-    const data = await res.json();
-    console.log(data);
-}
-
-getData();
-
-
-*/
