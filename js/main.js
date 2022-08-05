@@ -6,10 +6,31 @@ const weekly = document.querySelector(".weekly");
 console.log(weekly);
 const monthly = document.querySelector(".monthly");
 console.log(monthly);
+const url = './data.json';
+
+function reqData() {
+  fetch(url)
+  .then(res => res.json())
+  .then(data => adder(data)) 
+  .catch((error)=> {
+    console.error(error);
+  })
+}
+
+function adder(data) {
+  console.log(data);
+  data.forEach(ele => {
+   // console.log(ele);
+    console.log(ele.timeframes.daily.current);
+  })
+}
+
+reqData();
+
 
 // Replace ./data.json with your JSON feed
 
-async function loadData() {
+/*async function loadData() {
   fetch('./data.json').then(response => {
     return response.json();
   }).then(data => {
@@ -21,6 +42,9 @@ async function loadData() {
 }
 
 loadData();
+*/
+
+
 
 
 /* I need to create a function that will update the daily info
