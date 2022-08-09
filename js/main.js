@@ -20,53 +20,28 @@ function reqData() {
   })
 }
 
+daily.addEventListener("click", function () {
+  adder(data);
+}); 
 
-// This function here is looping through my data an identifying 
+// This function here is looping through my data an identifying the current time
 function adder(data) {
   console.log(data);
-  
    data.forEach(ele => {
-    console.log(ele);
-   let updateDaily = ele.timeframes.daily.current;
-   dailyTime = updateDaily.innerText;
+    //console.log(ele);
+   let updateDailyCurrent = ele.timeframes.daily.current;
+   console.log(updateDailyCurrent);
   })
-}
+};
 
 reqData();
-
-
 /* I need to create a function that will update the daily info
 by updating the current and previous sections of every section
 Then create an event listener that will call this function when the daily section is clicked. */
 
 
-const dailyInfo = function () {
-  const daily = data.current;
-  return daily;
-}
-
-
-
-daily.addEventListener("click", function () {
-
-})
 
 
 
 
-// Replace ./data.json with your JSON feed
-
-/*async function loadData() {
-  fetch('./data.json').then(response => {
-    return response.json();
-  }).then(data => {
-    // Work with JSON data here
-  console.log(data);  
-  }).catch(err => {
-    // Do something for an error here
-  });
-}
-
-loadData();
-*/
 
